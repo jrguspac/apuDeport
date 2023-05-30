@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Análisis de Cuotas de Casas de Apuestas</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Análisis de Cuotas de Casas de Apuestas</h1>
+  
+    <form id="cuotasForm">
+      <label for="cuota1">Cuota Local:</label>
+      <input type="number" step="0.01" id="cuota1" name="cuota1" required>
+      
+      <label for="cuotaX">Cuota Empate:</label>
+      <input type="number" step="0.01" id="cuotaX" name="cuotaX" required>
+      
+      <label for="cuota2">Cuota Visitante:</label>
+      <input type="number" step="0.01" id="cuota2" name="cuota2" required>
+      
+      <button type="submit">Realizar Análisis</button>
+    </form>
+
+    <div id="consultaInicial" class="oculto">
+      <h2>Consulta Inicial:</h2>
+      <p id="consultaCuotas"></p>
+    </div>
+
+    <div id="resultados"></div>
+    <div id="recomendacion" style="color: greenyellow;"></div>
+
+
+    <button id="nuevoCalculo" class="oculto" onclick="resetForm()">Nuevo Cálculo</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
